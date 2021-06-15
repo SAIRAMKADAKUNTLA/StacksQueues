@@ -20,6 +20,12 @@ namespace Stacks___Queues
             Console.WriteLine("after peek");
             list.Show();
             list.Size();
+            QueueList list1 = new QueueList();
+            list1.Enqueue(56);
+            list1.Enqueue(30);
+            list1.Enqueue(70);
+            Console.WriteLine("elements are");
+            list1.QShow();
         }
     }
 }
