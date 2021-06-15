@@ -47,5 +47,40 @@ namespace Stacks___Queues
                 node = node.next;
             }
         }
+        public void Pop()
+        {
+            if (isEmpty() == true)
+            {
+                Console.WriteLine("No elements to remove.");
+            }
+            if (this.top != null)
+            {
+                Console.WriteLine($"popped element: "+this.top.data);
+                this.top = this.top.next;
+            }
+        }
+        public void Peek()
+        {
+            if (isEmpty() == true)
+            {
+                Console.WriteLine("Stack is empty.");
+            }
+            else
+            {
+                Console.WriteLine($"top element:" +this.top.data);
+            }
+        }
+        public int Size()
+        {
+            int count = 0;
+            Node n = top;
+            while (n != null)
+            {
+                count++;
+                n = n.next;
+            }
+            Console.WriteLine($"size of stack:"+count);
+            return count;
+        }
     }
 }

@@ -13,6 +13,13 @@ namespace Stacks___Queues
             list.Push(70);
             Console.WriteLine("elements are");
             list.Show();
+            list.Pop();
+            Console.WriteLine("after pop");
+            list.Show();
+            list.Peek();
+            Console.WriteLine("after peek");
+            list.Show();
+            list.Size();
         }
     }
 }
