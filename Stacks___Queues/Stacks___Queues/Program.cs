@@ -26,6 +26,9 @@ namespace Stacks___Queues
             list1.Enqueue(70);
             Console.WriteLine("elements are");
             list1.QShow();
+            list1.Dequque();
+            Console.WriteLine("AFTER DEQUEUE");
+            list1.QShow();
         }
     }
 }

@@ -58,6 +58,36 @@ namespace Stacks___Queues
                 qNode = qNode.next;
             }
         }
+        public int Size()
+        {
+            int count = 0;
+            QNode qNode = this.top;
+            while(qNode != null)
+            {
+                count++;
+                qNode = qNode.next;
+            }
+            Console.WriteLine("count is"+count);
+            return count;
+        }
+        public void Dequque()
+        {
+            if (IsEmpty() == true)
+            {
+                Console.WriteLine("Queue empty!!");
+            }
+            if (Size() == 1)
+            {
+                Console.WriteLine($"Dequeued element:"+top.data);
+                this.top = null;
+            }
+            if (Size() > 1)
+            {
+                QNode n = this.top;
+                this.top = n.next;
+                Console.WriteLine($"Dequeued element:"+n.data);
+            }
+        }
 
     }
 }
